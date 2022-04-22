@@ -1,6 +1,6 @@
 body {
     background-color: #dddd;
-    color: rgba(0, 0, 0, 0.782);
+    color: rgb(0, 0, 0);
     font-size: 1.1em;
 }
 
@@ -11,8 +11,25 @@ p {
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0 100px;
+    height: 200px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0 120px;
+}
+
+header#cabecalho h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: darkgrey;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.648);
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header#cabecalho h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    color: #727171;
+    margin-top: 0;
+
 }
 
 header#cabecalho img#icone {
