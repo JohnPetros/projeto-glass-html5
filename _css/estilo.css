@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #dddd;
     color: rgba(0, 0, 0, 0.782);
 }
 
@@ -8,20 +8,34 @@ p {
     text-indent: 50px;
 }
 
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1150px;
+    top: 50px;
+}
+
+main#interface {
+    width: 1250px;
+    background-color: white;
+    margin: -20px auto 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+    padding: 15px;
+}
+
 /* Formatação de imagem com legendas */
 
-.foto-legenda {
+figure.foto-legenda {
     position: relative;
     border: 8px solid white;
     box-shadow: 1px 1px 4px black;
 }
 
-.foto-legenda img {
+figure.foto-legenda img {
     width: 100%;
     height: 100%;
 }
 
-.foto-legenda figcaption {
+figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -35,6 +49,44 @@ p {
 }
 
 
-.foto-legenda figcaption:hover {
+figure.foto-legenda figcaption:hover {
     opacity: 1;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 700px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color .5s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+
 }
