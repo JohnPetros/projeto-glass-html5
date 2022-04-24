@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste JavaScript</title>
     <script>
-        function acendeLâmpada() {
-            //alert('Lâmpada acendeu')
-            document.getElementById('luz').src = '_imagens/lampada-acesa.jpg'
-        }
-        function apagaLâmpada() {
-            document.getElementById('luz').src = '_imagens/lampada-apagada.jpg'
-        }
-        function quebraLâmpada() {
-            document.getElementById('luz').src = '_imagens/lampada-quebrada.jpg'
+        var quebrada = false
+        function mudaLâmpada(tipo) {
+            if (tipo == 1) {
+               var arquivo = '_imagens/lampada-acesa.jpg'
+            } 
+            if (tipo == 2) {
+                var arquivo = '_imagens/lampada-apagada.jpg'
+            } 
+            if (tipo == 3) {
+                var arquivo = '_imagens/lampada-quebrada.jpg'
+                quebrada = true
+            }
+            if (!quebrada) {
+                document.getElementById('luz').src = arquivo
+                if (tipo == 3) {
+                    quebrada = true
+                }
+            }
+             
         }
     </script>
 </head>
 <body>
     <h1>Acenda a Lâmpada</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="luz" alt="" onclick="quebraLâmpada()" onmousemove="acendeLâmpada()" onmouseout="apagaLâmpada()">
+    <img src="_imagens/lampada-apagada.jpg" id="luz" alt="" onclick="mudaLâmpada(1)" onmousemove="mudaLâmpada(2)" onmouseout="mudaLâmpada(3)">
 </body>
 </html>
