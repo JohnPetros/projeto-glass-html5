@@ -25,6 +25,7 @@ ul#album-fotos li span {
     background-color: rgba(0, 0, 0, 0.367);
     line-height: 610px;
     padding: 5px;
+    font-size: 25px;
 }
 
 ul#album-fotos li:hover {
